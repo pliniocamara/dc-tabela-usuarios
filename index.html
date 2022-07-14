@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Tabela de Usuários</title>
+</head>
+<body>
+    <h1>Tabela de Usuários</h1>
+    <table class="container table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Nome de Usuário</th>
+            <th scope="col">E-mail</th>
+            <th scope="col">Endereço</th>
+            <th scope="col">Empresa</th>
+          </tr>
+        </thead>
+        <tbody>
+        <!-- Conteúdo dentro de tbody é criado dinamicamente -->
+        </tbody>
+    </table>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <input type="search" class="form-control" id="pesquisaId" placeholder="Id do Usuário">
+            </div>
+            <div class="col-3">
+                <button type="button" class="btn btn-outline-primary">Buscar</button>       <!-- FALTA O SCRIPT -->
+                <button type="button" class="btn btn-outline-secondary">Limpar</button>     <!-- FALTA O SCRIPT -->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Form Data</h1>
+        <div id="json">
+            <!-- Dados impressos dinamicamente pelo javascript (não ficou organizado, falta formatar) -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
